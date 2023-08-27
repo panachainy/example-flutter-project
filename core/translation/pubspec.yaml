@@ -8,6 +8,7 @@ environment:
   flutter: 3.10.0
 
 dependencies:
+  easy_localization: ^3.0.2
   flutter:
     sdk: flutter
 
@@ -16,3 +17,6 @@ dev_dependencies:
     sdk: flutter
   mocktail: ^0.3.0
   very_good_analysis: ^5.0.0
+
+assets:
+  - assets/translations/
