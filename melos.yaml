@@ -69,3 +69,6 @@ scripts:
   build_runner:
     run: melos exec -c 6 -- "flutter pub run build_runner build --delete-conflicting-outputs"
     description: Run `flutter pub run build_runner build --delete-conflicting-outputs` in all packages
+    packageFilters:
+      ignore:
+        ["design_system", "lego_app", "lego_navigation", "lego_configuration"]

@@ -20,5 +20,8 @@ melos bs
 ## Maintain dependency
 
 ```sh
+# check dependencies per package
+dart pub outdated --no-dev-dependencies --up-to-date --no-dependency-overrides
+# upgrade all packages
 melos exec -- "flutter pub upgrade --major-versions"
 ```
