@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'character.dart';
 
@@ -27,33 +27,37 @@ mixin _$Character {
 /// @nodoc
 abstract class $CharacterCopyWith<$Res> {
   factory $CharacterCopyWith(Character value, $Res Function(Character) then) =
-      _$CharacterCopyWithImpl<$Res>;
+      _$CharacterCopyWithImpl<$Res, Character>;
+  @useResult
   $Res call({String name, String biography});
 }
 
 /// @nodoc
-class _$CharacterCopyWithImpl<$Res> implements $CharacterCopyWith<$Res> {
+class _$CharacterCopyWithImpl<$Res, $Val extends Character>
+    implements $CharacterCopyWith<$Res> {
   _$CharacterCopyWithImpl(this._value, this._then);
 
-  final Character _value;
   // ignore: unused_field
-  final $Res Function(Character) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? biography = freezed,
+    Object? name = null,
+    Object? biography = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      biography: biography == freezed
+      biography: null == biography
           ? _value.biography
           : biography // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -63,30 +67,30 @@ abstract class _$$_CharacterCopyWith<$Res> implements $CharacterCopyWith<$Res> {
           _$_Character value, $Res Function(_$_Character) then) =
       __$$_CharacterCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, String biography});
 }
 
 /// @nodoc
-class __$$_CharacterCopyWithImpl<$Res> extends _$CharacterCopyWithImpl<$Res>
+class __$$_CharacterCopyWithImpl<$Res>
+    extends _$CharacterCopyWithImpl<$Res, _$_Character>
     implements _$$_CharacterCopyWith<$Res> {
   __$$_CharacterCopyWithImpl(
       _$_Character _value, $Res Function(_$_Character) _then)
-      : super(_value, (v) => _then(v as _$_Character));
+      : super(_value, _then);
 
-  @override
-  _$_Character get _value => super._value as _$_Character;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? biography = freezed,
+    Object? name = null,
+    Object? biography = null,
   }) {
     return _then(_$_Character(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      biography: biography == freezed
+      biography: null == biography
           ? _value.biography
           : biography // ignore: cast_nullable_to_non_nullable
               as String,
@@ -114,18 +118,17 @@ class _$_Character implements _Character {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Character &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.biography, biography));
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.biography, biography) ||
+                other.biography == biography));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(biography));
+  int get hashCode => Object.hash(runtimeType, name, biography);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CharacterCopyWith<_$_Character> get copyWith =>
       __$$_CharacterCopyWithImpl<_$_Character>(this, _$identity);
 }

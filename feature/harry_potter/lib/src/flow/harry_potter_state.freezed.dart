@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'harry_potter_state.dart';
 
@@ -27,41 +27,45 @@ mixin _$HarryPotterState {
 abstract class $HarryPotterStateCopyWith<$Res> {
   factory $HarryPotterStateCopyWith(
           HarryPotterState value, $Res Function(HarryPotterState) then) =
-      _$HarryPotterStateCopyWithImpl<$Res>;
+      _$HarryPotterStateCopyWithImpl<$Res, HarryPotterState>;
+  @useResult
   $Res call({Character? selectedCharacter});
 
   $CharacterCopyWith<$Res>? get selectedCharacter;
 }
 
 /// @nodoc
-class _$HarryPotterStateCopyWithImpl<$Res>
+class _$HarryPotterStateCopyWithImpl<$Res, $Val extends HarryPotterState>
     implements $HarryPotterStateCopyWith<$Res> {
   _$HarryPotterStateCopyWithImpl(this._value, this._then);
 
-  final HarryPotterState _value;
   // ignore: unused_field
-  final $Res Function(HarryPotterState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? selectedCharacter = freezed,
   }) {
     return _then(_value.copyWith(
-      selectedCharacter: selectedCharacter == freezed
+      selectedCharacter: freezed == selectedCharacter
           ? _value.selectedCharacter
           : selectedCharacter // ignore: cast_nullable_to_non_nullable
               as Character?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $CharacterCopyWith<$Res>? get selectedCharacter {
     if (_value.selectedCharacter == null) {
       return null;
     }
 
     return $CharacterCopyWith<$Res>(_value.selectedCharacter!, (value) {
-      return _then(_value.copyWith(selectedCharacter: value));
+      return _then(_value.copyWith(selectedCharacter: value) as $Val);
     });
   }
 }
@@ -73,6 +77,7 @@ abstract class _$$_HarryPotterStateCopyWith<$Res>
           _$_HarryPotterState value, $Res Function(_$_HarryPotterState) then) =
       __$$_HarryPotterStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({Character? selectedCharacter});
 
   @override
@@ -81,21 +86,19 @@ abstract class _$$_HarryPotterStateCopyWith<$Res>
 
 /// @nodoc
 class __$$_HarryPotterStateCopyWithImpl<$Res>
-    extends _$HarryPotterStateCopyWithImpl<$Res>
+    extends _$HarryPotterStateCopyWithImpl<$Res, _$_HarryPotterState>
     implements _$$_HarryPotterStateCopyWith<$Res> {
   __$$_HarryPotterStateCopyWithImpl(
       _$_HarryPotterState _value, $Res Function(_$_HarryPotterState) _then)
-      : super(_value, (v) => _then(v as _$_HarryPotterState));
+      : super(_value, _then);
 
-  @override
-  _$_HarryPotterState get _value => super._value as _$_HarryPotterState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? selectedCharacter = freezed,
   }) {
     return _then(_$_HarryPotterState(
-      selectedCharacter: selectedCharacter == freezed
+      selectedCharacter: freezed == selectedCharacter
           ? _value.selectedCharacter
           : selectedCharacter // ignore: cast_nullable_to_non_nullable
               as Character?,
@@ -121,16 +124,16 @@ class _$_HarryPotterState implements _HarryPotterState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_HarryPotterState &&
-            const DeepCollectionEquality()
-                .equals(other.selectedCharacter, selectedCharacter));
+            (identical(other.selectedCharacter, selectedCharacter) ||
+                other.selectedCharacter == selectedCharacter));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(selectedCharacter));
+  int get hashCode => Object.hash(runtimeType, selectedCharacter);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_HarryPotterStateCopyWith<_$_HarryPotterState> get copyWith =>
       __$$_HarryPotterStateCopyWithImpl<_$_HarryPotterState>(this, _$identity);
 }
