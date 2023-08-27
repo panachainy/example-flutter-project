@@ -41,6 +41,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.1"
+  doc_widget:
+    dependency: transitive
+    description:
+      name: doc_widget
+      sha256: f8a3138deb225b77b44c2e0d366ad350462c70aaec69bcbc24a5f7a3c84bd26d
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.0"
+  doc_widget_annotation:
+    dependency: transitive
+    description:
+      name: doc_widget_annotation
+      sha256: "170b7752d64587542e71abe230c7d62fba59d62296ba4aee4e2c2004bb343642"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.8"
   equatable:
     dependency: transitive
     description:
@@ -62,6 +78,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.1.3"
+  flutter_highlight:
+    dependency: transitive
+    description:
+      name: flutter_highlight
+      sha256: "7b96333867aa07e122e245c033b8ad622e4e3a42a1a2372cbb098a2541d8782c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -75,6 +99,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
   get_it:
     dependency: "direct main"
     description:
@@ -83,6 +115,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.6.0"
+  highlight:
+    dependency: transitive
+    description:
+      name: highlight
+      sha256: "5353a83ffe3e3eca7df0abfb72dcf3fa66cc56b953728e7113ad4ad88497cf21"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.0"
   intl:
     dependency: transitive
     description:
@@ -99,6 +139,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      sha256: b10a7b2ff83d83c777edba3c6a0f97045ddadd56c944e1a23a3fdf43a1bf4467
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.8.1"
   lego_list:
     dependency: "direct main"
     description:
@@ -169,4 +217,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=3.0.0 <4.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=1.17.0"

@@ -1,6 +1,6 @@
 name: lego_list
 description: Lego List for Lego demo
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -8,12 +8,14 @@ environment:
   sdk: ">=2.17.6 <3.0.0"
 
 dependencies:
+  doc_widget: ^0.4.0
   equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
+  freezed_annotation: ^2.4.1
   get_it: ^7.2.0
   intl: ^0.18.0
 
@@ -24,3 +26,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
   mocktail: ^1.0.0
+  freezed: ^2.4.1
+  retrofit_generator: ^7.0.8
+  doc_widget_builder: ^0.4.0
+  golden_toolkit: ^0.15.0
