@@ -1,0 +1,12 @@
+# melos_managed_dependency_overrides: design_system,harry_potter,lego_configuration,lego_list,lego_navigation
+dependency_overrides:
+  design_system:
+    path: ../../core/design_system
+  harry_potter:
+    path: ../../feature/harry_potter
+  lego_configuration:
+    path: ../lego_configuration
+  lego_list:
+    path: ../../feature/lego_list
+  lego_navigation:
+    path: ../lego_navigation

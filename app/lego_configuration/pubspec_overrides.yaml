@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: lego_list
+dependency_overrides:
+  lego_list:
+    path: ../../feature/lego_list
