@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   get_it: ^7.2.0
-  go_router: ^4.2.8
+  go_router: ^10.1.0
   harry_potter:
     path: ../../feature/harry_potter
   lego_list:
