@@ -65,6 +65,7 @@ scripts:
   build:all:
     run: |
       melos build_runner --no-select
+      melos translation --no-select
 
   build_runner:
     run: melos exec -c 6 -- "flutter pub run build_runner build --delete-conflicting-outputs"
@@ -72,3 +73,7 @@ scripts:
     packageFilters:
       ignore:
         ["design_system", "lego_app", "lego_navigation", "lego_configuration"]
+
+  translation:
+    run: melos exec -c 6 --fail-fast --dir-exists=assets/translations -- 'flutter pub run easy_localization:generate -S "assets/translations" -s "en-US.json" -o "locale_keys.g.dart" -f keys -O "lib/translations"'
+    description: Run `flutter pub run easy_localization:generate -S "assets/translations" -s "en-US.json" -o "locale_keys.g.dart" -f keys -O "lib/translations"` in all packages
